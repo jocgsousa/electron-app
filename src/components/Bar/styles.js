@@ -7,10 +7,17 @@ export const Bar = styled.div`
   -webkit-app-region: drag;
   user-select: none;
   height: 30px;
+  width: 100vw;
+  background-color: #999;
 `;
 
 export const Col = styled.div`
   size: ${(props) => (props.size ? props.size : 1)};
+`;
+
+export const Title = styled.div`
+  margin-left: 5px;
+  margin-right: 5px;
 `;
 
 export const BtnMin = styled.button`
@@ -19,7 +26,7 @@ export const BtnMin = styled.button`
   height: 30px;
   border: none;
   outline: none;
-  background: #ffff;
+  background-color: transparent;
   transition: all 0.2s;
   &:hover {
     background: #dddd;
@@ -33,7 +40,7 @@ export const BtnMax = styled.button`
   height: 30px;
   border: none;
   outline: none;
-  background: #ffff;
+  background-color: transparent;
   transition: all 0.2s;
   &:hover {
     background: #dddd;
@@ -47,10 +54,24 @@ export const BtnClose = styled.button`
   height: 30px;
   border: none;
   outline: none;
-  background: #ffff;
+  background-color: transparent;
   transition: all 0.2s;
   &:hover {
     background: #ff0033;
+    transition: all 0.2s;
+    color: #ffff;
+  }
+`;
+export const BtnCloseMac = styled.button`
+  -webkit-app-region: no-drag;
+  width: 50px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: all 0.2s;
+  &:hover {
+    background: #dddd;
     transition: all 0.2s;
     color: #ffff;
   }
