@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function App() {
-  return (
-    <>
-      <h1>Hello Electron + React</h1>
-    </>
-  );
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Bar from './components/Bar';
+import Main from './pages/Main';
+import GlobalStyles from './styles/global';
+
+export default class App extends Component {
+  state = {
+    page: Main,
+  };
+
+  render() {
+    const { page } = this.state;
+    return (
+      <>
+        <Bar />
+        <Router>
+          <Route component={page} />
+        </Router>
+        <GlobalStyles />
+      </>
+    );
+  }
 }
