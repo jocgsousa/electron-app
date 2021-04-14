@@ -11,10 +11,10 @@ function createWindow() {
     width: 1000,
     height: 600,
     minHeight: 500,
-    minWidth: 500,
+    minWidth: 600,
     show: false,
     frame: false,
-    icon: path.resolve(__dirname, 'favicon.ico'),
+    icon: path.resolve(__dirname, 'public', 'favicon.ico'),
     fullscreenable: false,
     webPreferences: {
       nodeIntegration: true,

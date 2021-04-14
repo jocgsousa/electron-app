@@ -11,10 +11,11 @@ export default class App extends Component {
   };
 
   render() {
+    console.log(this.mainApp);
     const { page } = this.state;
     return (
       <>
-        <Bar />
+        <Bar mainApp={this} />
         <Router>
           <Route component={page} />
         </Router>

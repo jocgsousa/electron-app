@@ -9,6 +9,7 @@ export default createGlobalStyle`
     }
     html, body, #root{
         min-height: 100%;
+        background-color: #ddd;
     }
     body{
         -webkit-font-smoothing: antialiased !important;
