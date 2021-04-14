@@ -14,7 +14,7 @@ function createWindow() {
     minWidth: 600,
     show: false,
     frame: false,
-    icon: path.resolve(__dirname, 'public', 'favicon.ico'),
+    icon: path.resolve(__dirname, 'favicon.ico'),
     fullscreenable: false,
     webPreferences: {
       nodeIntegration: true,
