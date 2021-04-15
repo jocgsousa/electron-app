@@ -13,6 +13,7 @@ export default createGlobalStyle`
     }
     body{
         -webkit-font-smoothing: antialiased !important;
+        overflow: hidden;
     }
     body , input , button {
         font-size: 14px;

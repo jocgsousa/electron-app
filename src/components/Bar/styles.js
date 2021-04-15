@@ -9,8 +9,10 @@ export const Bar = styled.div`
   height: 30px;
   width: 100vw;
   background-color: #999;
-  margin-top: 1px;
+  position: -webkit-sticky;
   position: sticky;
+  top: 0;
+  margin-top: 1px;
 `;
 
 export const Col = styled.div`
